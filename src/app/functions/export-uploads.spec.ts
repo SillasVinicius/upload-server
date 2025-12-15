@@ -10,7 +10,7 @@ describe('export uploads', () => {
     .spyOn(upload, 'uploadFileToStorage')
     .mockImplementationOnce(async () => {
       return {
-        key: `${randomUUID}.csv`,
+        key: `${randomUUID()}.csv`,
         url: 'http://exemple.com/file.csv',
       }
     })
